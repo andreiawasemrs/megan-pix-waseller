@@ -114,7 +114,7 @@ function guessUF(cep) {
   if (!cep) return null;
   const start = parseInt(cep.slice(0,2), 10);
   if (start >= 88 && start <= 89) return "SC";
-  if (start >= 01 && start <= 19) return "SP";
+  if (start >= 1 && start <= 19) return "SP";
   if (start >= 20 && start <= 28) return "RJ";
   if (start >= 30 && start <= 39) return "MG";
   if (start >= 40 && start <= 48) return "BA";
